@@ -3,7 +3,7 @@ import '../App.css';
 import './SignUp.css';
 import image from '../images/rednation.jpg';
 import { Component} from 'react';
-import UserService from 'C:/Users/Marek PC/Desktop/Esport Website App/esport-app/src/services/UserServices.js';
+import UserService from 'C:/Users/Marek PC/Desktop/Red Nation Project/Esport-App-Front-End/Esport Website App/esport-app/src/services/UserServices.js';
 
 
 

@@ -13,15 +13,15 @@ class UserService {
     }
 
     getUserByUsername(userUsername){
-        return axios.get(USER_API_BASE_URL + '/' + userUsername);
+        return axios.get(USER_API_BASE_URL + '/get/' + userUsername);
     }
 
     updateUser(user, userUsername){
-        return axios.put(USER_API_BASE_URL + '/' + userUsername, user);
+        return axios.put(USER_API_BASE_URL + '/update/' + userUsername, user);
     }
 
     deleteUser(userUsername){
-        return axios.delete(USER_API_BASE_URL + '/' + userUsername);
+        return axios.delete(USER_API_BASE_URL + '/delete/' + userUsername);
     }
 }
 
