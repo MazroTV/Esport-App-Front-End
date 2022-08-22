@@ -97,32 +97,7 @@ render() {
   return (
 
     
-/*    <div className="body">
-    <div className="main">
-		<input type="checkbox" id="chk" aria-hidden="true"/>
 
-			<div className="signup">
-				<form>
-					<label className='label' htmlFor="chk" aria-hidden="true">Sign up</label>
-          <img className='signupimg'src={image} alt='Logo' />
-					<input onChange={this.changeUsernameHandler} className='input'type="text" name="user" value={this.state.username || ""}placeholder="User name" required=""/>
-					<input onChange={this.changeEmailHandler}className='input'type="email" name="email" value={this.state.email || ""} placeholder="Email" required=""/>
-					<input onChange={this.changePasswordHandler} className='input' type="password" name="pswd" value={this.state.password || ""} placeholder="Password" required=""/>
-          <input onChange={this.changePasswordConfirmHandler} className='input' type="password" name="pswdconfirm" value={this.state.passwordConfirm || ""} placeholder="Confirm Password" required=""/>
-					<button className='button' onClick ={this.handleSubmit} type="submit">Sign Up</button>
-				</form>
-			</div>
-
-			<div className="login">
-				<form>
-					<label className='label'htmlFor="chk" aria-hidden="true">Login</label>
-					<input className='input' type="text" name="user" placeholder="Username" required=""/>
-					<input className='input' type="password" name="pswd" placeholder="Password" required=""/>
-					<button className='button'>Login</button>
-				</form>
-			</div>
-	</div>
-  </div>*/
 
       <section className="vh-100 bg-image">
           <div className="mask d-flex align-items-center h-100 gradient-custom-3">
