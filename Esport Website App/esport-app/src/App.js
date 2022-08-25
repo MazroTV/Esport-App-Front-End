@@ -6,8 +6,8 @@ import Home from './pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
 import Announcements from './pages/Announcements';
-import Signup from './pages/SignUp';
-import Login from "./pages/Login";
+import Signup from './pages/Signup Page/SignUp';
+import Login from "./pages/Login Page/Login";
 
 function App() {
   return (

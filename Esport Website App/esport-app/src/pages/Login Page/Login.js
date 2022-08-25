@@ -1,14 +1,23 @@
 import { Component} from 'react';
 
-import image from "../images/rednation.jpg";
+import image from "../../images/rednation.jpg";
 import React from "react";
 import './Login.css';
 
 
-const Login = ()  => {
-    return (
+class Login extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            username:  '',
+            password: ''
+        }
+    }
 
-        <section className="h-100 gradient-form" >
+    render() {
+        return (
+
+            <section className="h-100 gradient-form">
                 <div className="container py-5 h-100">
                     <div className="row d-flex justify-content-center align-items-center h-100">
                         <div className="col-xl-10">
@@ -18,22 +27,22 @@ const Login = ()  => {
                                         <div className="card-body p-md-5 mx-md-4">
 
                                             <div className="text-center">
-                                                <img className="login-logo" src={image} alt="logo" />
-                                                    <h4 className="mt-1 mb-5 pb-1">Red Nation Login</h4>
+                                                <img className="login-logo" src={image} alt="logo"/>
+                                                <h4 className="mt-1 mb-5 pb-1">Red Nation Login</h4>
                                             </div>
 
                                             <form>
                                                 <p>Please login to your account</p>
 
                                                 <div className="form-outline mb-4">
-                                                    <input type="email" id="form2Example11" className="form-control"
+                                                    <input type="text" id="username" className="form-control"
                                                            placeholder="Username"/>
                                                     <label className="form-label"
                                                            htmlFor="form2Example11">Username</label>
                                                 </div>
 
                                                 <div className="form-outline mb-4">
-                                                    <input type="password" id="form2Example22"
+                                                    <input type="password" id="password"
                                                            className="form-control"
                                                            placeholder="Password"/>
 
@@ -49,16 +58,16 @@ const Login = ()  => {
 
                                                 </div>
                                                 <div className="text-center mb-5">
-                                                    <a className="text-muted" href="#!">Forgot password?</a>
+                                                    <a className="text-muted" href="esport-app/src/pages/Login Page/Login#!">Forgot password?</a>
                                                 </div>
 
                                                 <div className="d-flex align-items-center justify-content-center pb-4">
                                                     <p className="mb-0 me-2">Don't have an account?</p>
                                                     <a href="/sign-up">
-                                                    <button type="button" className="btn btn-outline-danger">Create
-                                                        new
-                                                    </button>
-                                                </a>
+                                                        <button type="button" className="btn btn-outline-danger">Create
+                                                            new
+                                                        </button>
+                                                    </a>
                                                 </div>
 
                                             </form>
@@ -81,10 +90,11 @@ const Login = ()  => {
                         </div>
                     </div>
                 </div>
-        </section>
+            </section>
 
 
-);
+        );
+    }
 }
 
 export default Login;

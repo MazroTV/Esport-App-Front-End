@@ -1,7 +1,7 @@
 
-import '../App.css';
+import '../../App.css';
 import './SignUp.css';
-import image from '../images/rednation.jpg';
+import image from '../../images/rednation.jpg';
 import { Component} from 'react';
 import UserService from 'C:/Users/Marek PC/Desktop/Red Nation Project/Esport-App-Front-End/Esport Website App/esport-app/src/services/UserServices.js';
 
@@ -48,7 +48,8 @@ handleSubmit= (e) => {
   UserService.createUser(user).then(res =>{
     this.props.history.push('/users');
   });
-  //window.location.reload();
+  alert('Account has been created');
+  window.location = '/login';
 }
 
 saveOrUpdateUser = (e) => {
@@ -154,7 +155,7 @@ render() {
                                           <input className="form-check-input me-2" type="checkbox" value=""
                                                  id="form2Example3cg"/>
                                           <label className="form-check-label" htmlFor="form2Example3g">
-                                              I agree all statements in <a href="#!" className="text-body"><u>Terms of
+                                              I agree all statements in <a href="esport-app/src/pages/Signup Page/SignUp#!" className="text-body"><u>Terms of
                                               service</u></a>
                                           </label>
                                       </div>
@@ -167,7 +168,7 @@ render() {
                                       </div>
 
                                       <p className="text-center text-muted mt-5 mb-0">Have already an account? <a
-                                          href="/login"
+                                          href="/Users/Marek PC/Desktop/Red Nation Project/Esport-App-Front-End/Esport Website App/esport-app/src/pages/Login Page/Login"
                                           className="fw-bold text-body"><u>Login here</u></a></p>
 
                                   </form>

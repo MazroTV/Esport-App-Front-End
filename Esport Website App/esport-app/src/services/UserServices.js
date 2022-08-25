@@ -5,11 +5,11 @@ const USER_API_BASE_URL = "http://localhost:8080/api/v1/users";
 class UserService {
 
     getAllUsers(){
-        return axios.get(USER_API_BASE_URL);
+        return axios.get(USER_API_BASE_URL + '/all');
     }
 
     createUser(user){
-        return axios.post(USER_API_BASE_URL, user);
+        return axios.post(USER_API_BASE_URL + '/add', user);
     }
 
     getUserByUsername(userUsername){
