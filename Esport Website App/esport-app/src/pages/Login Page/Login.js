@@ -1,22 +1,27 @@
 import { Component} from 'react';
 
 import image from "../../images/rednation.jpg";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Login.css';
-
+import Modal from "react-bootstrap/Modal";
 
 class Login extends Component {
     constructor(props){
         super(props)
         this.state = {
             username:  '',
-            password: ''
+            password: '',
+            show: false ,
+
         }
     }
 
+
+
+
     render() {
         return (
-
+            <div className="gradient-custom-3">
             <section className="h-100 gradient-form">
                 <div className="container py-5 h-100">
                     <div className="row d-flex justify-content-center align-items-center h-100">
@@ -76,13 +81,10 @@ class Login extends Component {
                                     </div>
                                     <div className="col-lg-6 d-flex align-items-center gradient-custom-2">
                                         <div className="text-white px-3 py-4 p-md-5 mx-md-4">
-                                            <h4 className="mb-4">We are more than just a company</h4>
-                                            <p className="small mb-0">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud
-                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                consequat.</p>
+                                            <h4 className="mb-4">We are more than just an Esports Team</h4>
+                                            <p className="small mb-0">We strive for greatness. We make each other better
+                                                and we are trying to make a name for ourselves. We come together as one to make a great Esports Organization.
+                                            Come and Join us and create your own destiny with us!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -92,6 +94,7 @@ class Login extends Component {
                 </div>
             </section>
 
+            </div>
 
         );
     }

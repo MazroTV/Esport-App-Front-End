@@ -6,7 +6,7 @@ import image from '../../images/Red_Nationtransparent.png';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [but, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -84,7 +84,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <Button buttonStyle='--btn--outline'>LOGIN</Button>
+          { but && <Button buttonStyle='--btn--outline'>LOGIN</Button>}
         </div>
       </nav>
     </>
